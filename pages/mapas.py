@@ -111,11 +111,10 @@ def app():
         origin_mark.add_to(map_1)
         destiny_mark.add_to(map_1)
         
-        folium.GeoJson(geo_Reduced,
-                       style_function=lambda feature: 
-                           {'fillColor': 'blue',
-                            'color': 'blue',
-                            'weight': 1,
-                            'dashArray': '5, 5'}
-                        ).add_to(map_1)
+
+        style_function = lambda feature: {'fillColor': 'blue',
+                                        'color': 'blue',
+                                        'weight': 1}
+        
+        folium.GeoJson(geo_Reduced, style_function=style_function ).add_to(map_1)
         folium_static(map_1)
