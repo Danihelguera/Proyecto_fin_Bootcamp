@@ -13,7 +13,7 @@ def consigue_lat_long(direccion):
     Esta función saca las coordenadas de la dirección que le pases
     y la devuelve como lista [lat,long]
     """
-    geolocator = Nominatim(user_agent="dddddddddddddddddd@gmail.com")
+    geolocator = Nominatim(user_agent="danielhelguerasanchez@gmail.com")
     location = geolocator.geocode(direccion)
     return [location.latitude, location.longitude]
 
