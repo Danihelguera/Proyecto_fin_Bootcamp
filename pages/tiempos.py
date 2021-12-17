@@ -37,7 +37,7 @@ def app():
             st.write(search_by["tipo"])
         
     tiempo_max = st.sidebar.slider("Tiempo máximo en coche en minutos:",min_value = 1 , max_value=90, step=1, value = 15)
-    st.write(f"# Me quiero escapar... \n## a {tiempo_max} minutos de aquí")
+    st.write(f"#  Me mudo / Cambio de trabajo ... \n## ... pero a no más de {tiempo_max} minutos de aquí")
         
     tipo_mapa = st.sidebar.radio("Selecciona la forma de busqueda:" , ['OpenStreetMap', 
                                                                        'Stamen Terrain', 
